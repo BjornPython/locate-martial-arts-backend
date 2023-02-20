@@ -5,6 +5,7 @@ const { registerUser, loginUser, getSparringUsers, getCoachUsers, getUserInfo, u
 const {registerGym, loginGym, getGyms, getGymInfo, updateGymInfo } = require("../controllers/gymControllers")
 const {createConvo, addMessage} = require("../controllers/messageControllers")
 
+router.get("/", (req, res) => {res.status(200).json({message: "Working..."})})
 router.get("/users", getUserInfo)
 router.post("/users/register", registerUser)
 router.post("/users/login", loginUser)

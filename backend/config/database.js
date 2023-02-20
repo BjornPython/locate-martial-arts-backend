@@ -1,5 +1,4 @@
 const mongoose = require("mongoose")
-const colors = require("colors")
 require('dotenv').config()
 mongoose.set("strictQuery", true)
 
